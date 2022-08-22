@@ -26,56 +26,63 @@
             <div class="card-container">
 
                 <!-- card -->
-                <div class="card">
-                    <!-- poster -->
-                    <div class="img-container">
-                        <img class="poster" src="https://via.placeholder.com/150" alt="poster img">
-                    </div>
-                    <!-- titolo -->
-                    <h2>Sport Controvoglia</h2>
-                    <div class="info-container">
-                        <!-- director -->
-                        <p class="text director">Lucio Ghedina</p>
-                        <!-- anno -->
-                        <p class="text year">2013</p>
-                        <!-- genere -->
-                        <p class="text genre">sport</p>
-                        <!-- durata -->
-                        <p class="text durata">0.10h</p>
-                    </div>
-                </div>
-                <!-- fine card -->
+                <div 
+                class="card" 
+                v-for="item in films" 
+                :key="item">
 
-                <!-- card -->
-                <div class="card">
-                    <!-- poster -->
+                    <!-- poster container -->
                     <div class="img-container">
-                        <img class="poster" src="https://via.placeholder.com/150" alt="poster img">
+                        <!-- img -->
+                        <img 
+                        class="poster" 
+                        :src="item.poster" 
+                        :alt="item.title">
+
                     </div>
                     <!-- titolo -->
-                    <h2>IT</h2>
+                    <h2>
+                        {{ item.title }}
+                    </h2>
+
+                    <!-- info container -->
                     <div class="info-container">
+
                         <!-- director -->
-                        <p class="text director">qualche regista</p>
+                        <p class="text director">
+                            {{ item.director }}
+                        </p>
+
                         <!-- anno -->
-                        <p class="text year">2000</p>
+                        <p class="text year">
+                            {{ item.year }}
+                        </p>
+
                         <!-- genere -->
-                        <p class="text genre">horror</p>
+                        <p class="text genre">
+                            {{ item.genre }}
+                        </p>
+
                         <!-- durata -->
-                        <p class="text durata">1.30h</p>
+                        <p class="text durata">
+                            {{ item.duration }}
+                        </p>
+
                     </div>
+                    <!-- fine info container -->
+
                 </div>
                 <!-- fine card -->
 
             </div>
             <!-- fine card container -->
-
+            
         </div>
         <!-- fine container -->
 
     </div>
     <!-- fine root -->
 
-    <script type="text/javascript" src="#"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
