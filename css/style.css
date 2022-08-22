@@ -18,20 +18,21 @@ header .page-title{
     padding: 0.5rem 3rem;
     display: inline-block;
     border-radius: 30px;
-    
 }
 
 .card-container{
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card{
     background-color: rgb(171, 167, 167);
+    text-align: center;
     padding: 1rem;
-    max-width: 150px;
     border-radius: 10px;
+    width: calc( (100% / 5) - 20px );
+    margin: 10px;
 }
 
 h2{
@@ -40,4 +41,9 @@ h2{
 
 p{
     text-align: center;
+}
+
+img{
+    width: 150px;
+    height: 211px;
 }
