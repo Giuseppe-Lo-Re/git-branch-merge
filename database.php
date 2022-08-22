@@ -22,10 +22,10 @@
             'year' => 1993,
             'poster' => 'https://ae01.alicdn.com/kf/HTB14AOcbBWD3KVjSZFsq6AqkpXaG/Q1349-Poster-e-stampe-IT-Movie-Pennywise-1990-Classic-Film-Art-Poster-Canvas-Painting-Home-Decor.jpg',
             'genre' => 'Horror/Thriller',
-            'duration' => '3.12m',
+            'duration' => '3.12h',
         ],
         [
-            'title' => 'Ritorno Al Furuto',
+            'title' => 'Ritorno Al Futuro',
             'director' => 'Robert Zemeckis',
             'year' => 1985 ,
             'poster' => 'https://aforismi.meglio.it/img/film/ritorno-al-futuro.jpg',
@@ -46,7 +46,7 @@
             'year' => 2013,
             'poster' => 'https://i.ytimg.com/vi/bhGUDbm_670/maxresdefault.jpg',
             'genre' => 'Sport',
-            'duration' => '0.10m',
+            'duration' => '0.10h',
         ],
         [
             'title' => 'Il Grande Gatsby',
